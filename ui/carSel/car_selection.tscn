@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://yk66bvr2vetg"]
+
+[ext_resource type="Script" path="res://ui/carSel/CarSelection.cs" id="1_vo3ok"]
+
+[node name="car_selection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vo3ok")
+
+[node name="button_prev" type="Button" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 320.0
+offset_right = 384.0
+offset_bottom = 384.0
+text = "<"
+
+[node name="button_next" type="Button" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 320.0
+offset_right = 832.0
+offset_bottom = 384.0
+text = ">"
+
+[node name="button_select" type="Button" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 416.0
+offset_right = 640.0
+offset_bottom = 480.0
+text = ">"
+
+[node name="button_back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 64.0
+offset_bottom = 64.0
+text = "X"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 320.0
+offset_right = 624.0
+offset_bottom = 384.0
+text = "Hi!"
+editable = false
+
+[connection signal="pressed" from="button_prev" to="." method="_on_button_prev_pressed"]
+[connection signal="pressed" from="button_next" to="." method="_on_button_next_pressed"]
+[connection signal="pressed" from="button_select" to="." method="_on_button_select_pressed"]
+[connection signal="pressed" from="button_back" to="." method="_on_button_back_pressed"]

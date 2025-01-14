@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://d11qfl1duayrq"]
+[gd_scene load_steps=3 format=3 uid="uid://d11qfl1duayrq"]
 
 [ext_resource type="Script" path="res://game/00_game/Game.cs" id="1_fknec"]
+[ext_resource type="PackedScene" uid="uid://cuouwvorpwkrs" path="res://assets/cars/base/car.tscn" id="2_heivk"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_fknec")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_heivk")]

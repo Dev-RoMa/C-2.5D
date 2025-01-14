@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c0j6qkxb57fkx"
+
+[deps]
+
+files=["res://assets/cars/base/car_val.50.translation", "res://assets/cars/base/car_val.100.translation", "res://assets/cars/base/car_val.150.translation", "res://assets/cars/base/car_val.200.translation"]
+
+source_file="res://assets/cars/base/car_val.csv"
+dest_files=["res://assets/cars/base/car_val.50.translation", "res://assets/cars/base/car_val.100.translation", "res://assets/cars/base/car_val.150.translation", "res://assets/cars/base/car_val.200.translation"]
+
+[params]
+
+compress=true
+delimiter=0
